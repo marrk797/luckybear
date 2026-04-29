@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>LUCKYBEAR — Войди и выиграй</title>
+<link rel="icon" href="images/favicon_v4.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800;900&display=swap" rel="stylesheet">
+
+<style>*{margin:0;padding:0;box-sizing:border-box}:root{--bg:#0a0a12;--surface:rgba(255,255,255,.03);--accent:#00f5d4;--accent2:#7b61ff;--accent3:#ff6b6b;--text:#fff;--text-dim:rgba(255,255,255,.6)}body{font-family:'Unbounded',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;min-height:100dvh;overflow-x:hidden}.bg-gradient{position:fixed;inset:0;z-index:0;background:radial-gradient(ellipse 80% 50% at 20% -20%,rgba(123,97,255,.25),transparent) , radial-gradient(ellipse 60% 40% at 80% 10%,rgba(0,245,212,.2),transparent) , radial-gradient(ellipse 50% 30% at 50% 100%,rgba(255,107,107,.15),transparent);animation:bgPulse 8s ease-in-out infinite alternate}@keyframes bgPulse{
+  0%{opacity:0.8;filter:hue-rotate(0deg)}
+  100%{opacity:1;filter:hue-rotate(15deg)}
+}.container{position:relative;z-index:1;max-width:600px;margin:0 auto;padding:24px 20px 60px;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}.logo-section{text-align:center;padding:30px 0 20px}.logo{width:200px;height:140px;margin:0 auto 16px;position:relative;display:flex;align-items:center;justify-content:center}.logo img{max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 0 30px rgba(0,245,212,.5));transform:scale(1)}.logo-circle img{border-radius:50%;border:3px solid rgba(255,255,255,.2)}.logo-rounded img{border-radius:20px;border:3px solid rgba(255,255,255,.2)}.logo-none img{border-radius:0;border:none}.brand-name{font-size:clamp(28px,7vw,42px);font-weight:900;letter-spacing:-1px;background:linear-gradient(135deg,#00f5d4,#7b61ff,#ff6b6b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.tagline{margin-top:8px;font-size:14px;color:rgba(255,255,255,.6);letter-spacing:2px;text-transform:uppercase}.vpn-notice{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 20px;background:rgba(255,255,255,.03);border-radius:14px;border:1px solid rgba(255,255,255,.06);font-size:12px;color:var(--text-dim)}.buttons-section{padding:30px 0;display:flex;flex-direction:column;gap:16px}.btn{position:relative;display:flex;align-items:center;justify-content:center;gap:12px;padding:20px 28px;border-radius:20px;font-size:16px;font-weight:700;text-decoration:none;color:var(--text);border:none;cursor:pointer;overflow:hidden;transition:transform .35s ease , box-shadow .35s ease , border-color .35s ease , background .35s ease;-webkit-tap-highlight-color:transparent;transform-origin:center;will-change:transform}.btn span,.btn svg{position:relative;z-index:1}.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 10px 40px rgba(0,245,212,.3)}.btn-secondary{background:linear-gradient(135deg,var(--accent2),var(--accent3));box-shadow:0 10px 40px rgba(123,97,255,.3)}.btn-outline{background:transparent;border:2px solid rgba(255,255,255,.15);box-shadow:0 4px 20px rgba(0,0,0,.2)}.btn-custom{color:var(--text)}.btn-outline-custom{background:transparent;border:2px solid;box-shadow:0 4px 20px rgba(0,0,0,.2)}.btn-primary:hover,.btn-secondary:hover,.btn-outline:hover,.btn-custom:hover,.btn-outline-custom:hover{transform:translateY(-4px) scale(1.02)}.btn-primary:active,.btn-secondary:active,.btn-outline:active,.btn-custom:active,.btn-outline-custom:active{transform:translateY(-2px) scale(.98)}.btn-icon{width:24px;height:24px;flex-shrink:0}.games-section{margin-top:auto;padding-top:40px}.section-title{font-size:18px;font-weight:700;margin-bottom:20px;text-align:center;color:var(--text-dim);letter-spacing:1px;text-transform:uppercase}.games-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}.game-card{width:calc(50% - 8px);max-width:220px;min-width:140px}.game-card{position:relative;background:var(--surface);border-radius:20px;border:1px solid rgba(255,255,255,.06);overflow:hidden;transition:transform .35s ease , box-shadow .35s ease;text-decoration:none;display:block}.game-card:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 20px 60px rgba(0,0,0,.4)}.game-card:active{transform:translateY(-4px) scale(.98)}.game-badge{position:absolute;top:12px;right:12px;padding:6px 12px;background:linear-gradient(135deg,var(--accent3),#ff8e53);border-radius:20px;font-size:10px;font-weight:800;letter-spacing:1px;z-index:2}.game-image{width:100%;aspect-ratio:1;object-fit:cover;display:block}.game-title{padding:16px;font-size:13px;font-weight:700;text-align:center;background:rgba(0,0,0,.3)}.footer{margin-top:40px;padding:20px 0;text-align:center;font-size:11px;color:rgba(255,255,255,.3);border-top:1px solid rgba(255,255,255,.05)}@media (max-width:480px){.container{padding:16px 16px 40px}.logo{width:170px;height:120px}.btn{padding:18px 24px;font-size:15px;border-radius:18px}.games-grid{gap:12px}.game-card{width:calc(50% - 6px);min-width:120px}.game-title{padding:12px;font-size:12px}}@supports(padding: max(0px)){
+  .container{
+    padding-top:max(24px,env(safe-area-inset-top));
+    padding-bottom:max(60px,env(safe-area-inset-bottom));
+    padding-left:max(20px,env(safe-area-inset-left));
+    padding-right:max(20px,env(safe-area-inset-right));
+  }
+}</style>
+</head>
+<body>
+<div class="bg-gradient"></div>
+
+<div class="container">
+  <header class="logo-section">
+    <div class="logo logo-none">
+      <script data-pagespeed-no-defer="">(function(){for(var g="function"==typeof Object.defineProperties?Object.defineProperty:function(b,c,a){if(a.get||a.set)throw new TypeError("ES3 does not support getters and setters.");b!=Array.prototype&&b!=Object.prototype&&(b[c]=a.value)},h="undefined"!=typeof window&&window===this?this:"undefined"!=typeof global&&null!=global?global:this,k=["String","prototype","repeat"],l=0;l<k.length-1;l++){var m=k[l];m in h||(h[m]={});h=h[m]}var n=k[k.length-1],p=h[n],q=p?p:function(b){var c;if(null==this)throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");c=this+"";if(0>b||1342177279<b)throw new RangeError("Invalid count value");b|=0;for(var a="";b;)if(b&1&&(a+=c),b>>>=1)c+=c;return a};q!=p&&null!=q&&g(h,n,{configurable:!0,writable:!0,value:q});var t=this;function u(b,c){var a=b.split("."),d=t;a[0]in d||!d.execScript||d.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===c?d[e]?d=d[e]:d=d[e]={}:d[e]=c};function v(b){var c=b.length;if(0<c){for(var a=Array(c),d=0;d<c;d++)a[d]=b[d];return a}return[]};function w(b){var c=window;if(c.addEventListener)c.addEventListener("load",b,!1);else if(c.attachEvent)c.attachEvent("onload",b);else{var a=c.onload;c.onload=function(){b.call(this);a&&a.call(this)}}};var x;function y(b,c,a,d,e){this.h=b;this.j=c;this.l=a;this.f=e;this.g={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.i=d;this.b={};this.a=[];this.c={}}function z(b,c){var a,d,e=c.getAttribute("data-pagespeed-url-hash");if(a=e&&!(e in b.c))if(0>=c.offsetWidth&&0>=c.offsetHeight)a=!1;else{d=c.getBoundingClientRect();var f=document.body;a=d.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);d=d.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+d;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.g.height&&d<=b.g.width)}a&&(b.a.push(e),b.c[e]=!0)}y.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&z(this,b)};u("pagespeed.CriticalImages.checkImageForCriticality",function(b){x.checkImageForCriticality(b)});u("pagespeed.CriticalImages.checkCriticalImages",function(){A(x)});function A(b){b.b={};for(var c=["IMG","INPUT"],a=[],d=0;d<c.length;++d)a=a.concat(v(document.getElementsByTagName(c[d])));if(a.length&&a[0].getBoundingClientRect){for(d=0;c=a[d];++d)z(b,c);a="oh="+b.l;b.f&&(a+="&n="+b.f);if(c=!!b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),d=1;d<b.a.length;++d){var e=","+encodeURIComponent(b.a[d]);131072>=a.length+e.length&&(a+=e)}b.i&&(e="&rd="+encodeURIComponent(JSON.stringify(B())),131072>=a.length+e.length&&(a+=e),c=!0);C=a;if(c){d=b.h;b=b.j;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(r){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(D){}}f&&(f.open("POST",d+(-1==d.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}}function B(){var b={},c;c=document.getElementsByTagName("IMG");if(!c.length)return{};var a=c[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var d=0;a=c[d];++d){var e=a.getAttribute("data-pagespeed-url-hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].o&&a.height>=b[e].m)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b}var C="";u("pagespeed.CriticalImages.getBeaconData",function(){return C});u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=r;d&&w(function(){window.setTimeout(function(){A(r)},0)})});})();pagespeed.CriticalImages.Run('/ngx_pagespeed_beacon','https://luckybeargames.site/game/','7v1dYIMfjg',true,false,'IZ3yyoYi-_w');</script><img src="Images/000.webp" alt="LUCKYBEAR" data-pagespeed-url-hash="2255505258" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+    </div>
+    <h1 class="brand-name">LUCKYBEAR</h1>
+    <p class="tagline">Войди и выиграй</p>
+  </header>
+
+  <div class="vpn-notice" style="">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+      <line x1="12" y1="9" x2="12" y2="13"></line>
+      <line x1="12" y1="17" x2="12.01" y2="17"></line>
+    </svg>
+    <span>Сайт может требовать VPN в некоторых регионах</span>
+  </div>
+
+  <nav class="buttons-section">
+    <a href="https://lbgame777.xyz/6cPZfT" class="btn btn-custom" data-btn="site" style="background:#7b61ff;box-shadow:0 10px 40px #7b61ff40;"><svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon></svg><span>ПЕРЕЙТИ НА САЙТ</span></a>
+    <a href="https://lbgame777.xyz/6cPZfT" class="btn btn-custom" data-btn="bot" style="background:#00f5d4;box-shadow:0 10px 40px #00f5d440;"><svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.74 3.99-1.74 6.65-2.89 7.99-3.45 3.8-1.6 4.59-1.88 5.1-1.89.11 0 .37.03.54.17.14.12.18.28.2.45-.01.06.01.24 0 .38z"></path></svg><span>ОТКРЫТЬ БОТА</span></a>
+    <a href="https://lbgame777.xyz/6cPZfT" class="btn btn-outline-custom" data-btn="tg" style="border-color:#ff6b9d;color:#ff6b9d;"><svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg><span>TELEGRAM КАНАЛ</span></a>
+  </nav>
+
+  <section class="games-section" id="gamesSection" style="">
+    <h2 class="section-title">Популярные игры</h2>
+    <div class="games-grid" id="gamesGrid">
+      <a href="https://lbgame777.xyz/6cPZfT" class="game-card" data-game="1" style="">
+        <span class="game-badge">HOT</span>
+        <img src="images/1.webp" alt="AVIAMASTERS" class="game-image" data-pagespeed-url-hash="919890769" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        <div class="game-title" style="color:#4a9eff">AVIAMASTERS</div>
+      </a>
+      <a href="https://lbgame777.xyz/6cPZfT" class="game-card" data-game="2" style="">
+        <span class="game-badge">HOT</span>
+        <img src="Images/2.webp" alt="MINE SLOT" class="game-image" data-pagespeed-url-hash="1214390690" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        <div class="game-title" style="color:#4a9eff">MINE SLOT</div>
+      </a>
+      <a href="https://lbgame777.xyz/6cPZfT" class="game-card" data-game="3" style="">
+        <span class="game-badge">HOT</span>
+        <img src="Images/3.webp" alt="TOWER RUSH" class="game-image" data-pagespeed-url-hash="1508890611" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        <div class="game-title" style="color:#4a9eff">TOWER RUSH</div>
+      </a>
+      <a href="https://lbgame777.xyz/6cPZfT" class="game-card" data-game="4" style="">
+        <span class="game-badge">HOT</span>
+        <img src="Images/4.webp" alt="PENGU SPORT" class="game-image" data-pagespeed-url-hash="1803390532" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        <div class="game-title" style="color:#4a9eff">PENGU SPORT</div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2026 LuckyBear — Все права защищены
+  </footer>
+</div>
+
+<img id="visit-pixel" src="images/track_visit.gif" alt="" style="position:absolute;left:-9999px;" data-pagespeed-url-hash="931607163" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+<script>(function(){const params=new URLSearchParams(window.location.search);const src=params.get('utm_source')||params.get('src')||'';const pixel=document.getElementById('visit-pixel');const base='/track_visit.php?l=game';pixel.src=src?base+'&src='+encodeURIComponent(src):base;})();</script>
+<script>(function(){var redirectEnabled=0;var redirectUrl='';var redirectDelay=5;if(redirectEnabled!==1||!redirectUrl)return;var delay=redirectDelay||5;var remaining=delay;var bar=document.createElement('div');bar.id='redirect-bar';bar.innerHTML='<div class="redirect-bar-inner">'+'<span id="redirect-text">\u041f\u0435\u0440\u0435\u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0447\u0435\u0440\u0435\u0437 <b id="redirect-sec">'+remaining+'</b> \u0441\u0435\u043a...</span>'+'<div class="redirect-progress"><div class="redirect-progress-fill" id="redirect-fill"></div></div>'+'</div>';document.body.appendChild(bar);var fill=document.getElementById('redirect-fill');var secEl=document.getElementById('redirect-sec');fill.style.transition='width 1s linear';var doRedirect=function(){window.location.href=redirectUrl;};var timer=setInterval(function(){remaining--;if(secEl)secEl.textContent=Math.max(0,remaining);fill.style.width=((delay-remaining)/delay*100)+'%';if(remaining<=0){clearInterval(timer);try{var img=new Image();img.src=location.protocol+'//'+location.host+'/r.php?l=game&t=redirect&noredirect=1&_='+Date.now();setTimeout(doRedirect,300);}catch(e){doRedirect();}}},1000);})();</script>
+<style>#redirect-bar{position:fixed;bottom:0;left:0;right:0;z-index:9999;padding:12px 20px;background:rgba(10,10,18,.95);border-top:1px solid rgba(255,255,255,.1);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}.redirect-bar-inner{max-width:600px;margin:0 auto;text-align:center}#redirect-text{font-size:13px;color:rgba(255,255,255,.7);font-family:'Unbounded',system-ui,sans-serif}#redirect-text b{color:#00f5d4}.redirect-progress{margin-top:8px;height:4px;background:rgba(255,255,255,.1);border-radius:4px;overflow:hidden}.redirect-progress-fill{height:100%;width:0;background:linear-gradient(90deg,#00f5d4,#7b61ff);border-radius:4px}</style>
+
+
+
+</body></html>
